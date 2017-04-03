@@ -1,7 +1,4 @@
 from django.db import models
-
-# Create your models here.
-from django.db import models
 from django.utils import timezone
 
 
@@ -19,4 +16,4 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.titles
+        return self.title
