@@ -1,7 +1,14 @@
 .page-header {
-    background-color: #c9b8c3;
+    display: block; /* Для старых браузеров */
+    height: 200px; /* Высота шапки */
+    background: url(../images/header-title.jpg) no-repeat center bottom;
+    /*background-color: #c9b8c3;*/
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+}
+
+.headers-name {
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -16,7 +23,7 @@
 }
 
 h1, h2, h3, h4 {
-    color: #1c1136;
+    color: #bcb6c7;
     font-family: 'Lobster', cursive;
 }
 
@@ -45,4 +52,9 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #748290;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+    color: #bcb6c7
 }
