@@ -11,6 +11,9 @@ SECRET_KEY = env('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
