@@ -1,9 +1,17 @@
+@import 'variables.css';
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    color: var(--primary-color);
+}
+
 .page-header {
-    display: block; /* Для старых браузеров */
-    height: 200px; /* Высота шапки */
-    background-color: #c9b8c3;
+    display: block;
+    height: var(--header-height);
+    background-color: var(--header-bg-color);
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: var(--space-m) var(--space-m) var(--space-m) var(--space-left);
 }
 
 .headers-name {
@@ -11,27 +19,24 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #424049;
+    color: var(--header-text-color);
     font-size: 36pt;
     text-decoration: none;
 }
 
 .content {
-    background-color: #ffffff;
-    margin-left: 40px;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 120%;
+    background-color: var(--content-bg-color);
+    margin-left: var(--space-left);
 }
 
 h1, h2, h3, h4 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
+    color: var(--header-text-color);
 }
 
 .date {
-    color: #828282;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 
 .save {
@@ -43,21 +48,20 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: #fff;
     float: right;
-    font-size: 26pt;
+    font-size: 20pt;
     margin-right: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: var(--post-margin-bottom);
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #748290;
+    color: var(--header-text-color);
 }
 
 .comment {
-    margin: 20px 0px 20px 20px;
-    color: #bcb6c7
+    margin: var(--space-m) 0 var(--space-m) var(--space-m);
 }

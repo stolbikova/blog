@@ -1,0 +1,21 @@
+:root {
+    /* Element specific */
+    --header-height: 200px;
+    --header-bg-color: #c9b8c3;
+    --content-bg-color: #fff;
+    --header-text-color: #424049;
+    --post-margin-bottom: 70px;
+
+    /* Spaces */
+    --space-m: 20px;
+    --space-left: 40px;
+
+    /* Fonts */
+    --font-family: 'Open Sans', sans-serif;
+    --line-height: 120%;
+    --font-weight-bold: 700;
+    
+    /* Colors */
+    --secondary-color: #828282;
+    --primary-color: #3f352F;
+}
