@@ -1,8 +1,7 @@
 .page-header {
     display: block; /* Для старых браузеров */
     height: 200px; /* Высота шапки */
-    background: url(../images/header-title.jpg) no-repeat center bottom;
-    /*background-color: #c9b8c3;*/
+    background-color: #c9b8c3;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -22,9 +21,13 @@
     margin-left: 40px;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 120%;
+}
+
 h1, h2, h3, h4 {
-    color: #bcb6c7;
-    font-family: 'Lobster', cursive;
+    font-weight: 700;
 }
 
 .date {
