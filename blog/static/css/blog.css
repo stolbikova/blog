@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: var(--space-m);
+    margin-bottom: 50px;
 }
 
 .post h1 a, .post h1 a:visited {
