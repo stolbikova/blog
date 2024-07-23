@@ -6,3 +6,6 @@ db.sqlite3
 .DS_Store
 .env
 venv
+grafana-v11.1.0
+grafana-enterprise-11.1.0.darwin-amd64.tar.gz
+data
