@@ -65,3 +65,7 @@ h1, h2, h3, h4 {
 .comment {
     margin: var(--space-m) 0 var(--space-m) var(--space-m);
 }
+
+.delete-btn {
+    margin-block-start:  var(--space-s);
+}

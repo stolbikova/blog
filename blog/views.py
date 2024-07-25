@@ -74,3 +74,14 @@ class CommentRemoveView(LoginRequiredMixin, View):
         post_pk = comment.post.pk
         comment.delete()
         return redirect('post_detail', pk=post_pk)
+
+
+class DeletePostView(LoginRequiredMixin, View):
+    def post(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        post.delete()
+        return redirect('post_list')
+
+    def get(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        return render(request, 'blog/post_confirm_delete.html', {'post': post})
