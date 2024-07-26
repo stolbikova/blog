@@ -9,12 +9,9 @@
         {% endif %}
         {% if user.is_authenticated %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <form method="post" action="{% url 'post_delete' pk=post.pk %}" style="display:inline;">
-            {% csrf_token %}
-            <button class="btn btn-danger delete-btn" type="submit">
-                <span class="glyphicon glyphicon-trash"></span>
-            </button>
-        </form>
+        <a class="btn btn-danger delete-btn" href="{% url 'post_delete' pk=post.pk %}">
+            <span class="glyphicon glyphicon-trash"></span>
+        </a>
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|safe|linebreaks }}</p>

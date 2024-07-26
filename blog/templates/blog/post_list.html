@@ -25,7 +25,7 @@
                                     {{ post.published_date }}
                                 </div>
                                 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title|safe }}</a></h1>
-                                <p>{{ post.text|truncate_lines:3|safe|linebreaksbr }}</p>
+                                <p>{{ post.text|truncate_lines:10|safe|linebreaksbr }}</p>
                                 <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
                             </div>
                             {% endfor %}
