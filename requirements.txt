@@ -3,3 +3,4 @@ django-environ
 gunicorn
 psycopg2-binary
 django-prometheus
+django-ckeditor
