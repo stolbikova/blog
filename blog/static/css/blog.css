@@ -4,6 +4,11 @@ body {
     font-family: var(--font-family);
     line-height: var(--line-height);
     color: var(--primary-color);
+
+    font-size: 14px;
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
 }
 
 .page-header {
@@ -14,10 +19,6 @@ body {
     padding: var(--space-m) var(--space-m) var(--space-m) var(--space-left);
 }
 
-.headers-name {
-
-}
-
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: var(--header-text-color);
     font-size: 36pt;
@@ -26,8 +27,16 @@ body {
 
 .content {
     background-color: var(--content-bg-color);
-    margin-left: var(--space-left);
+    margin: var(--space-left);
+
+    @media (max-width: 480px) {
+        .content {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 }
+
 
 h1, h2, h3, h4 {
     font-weight: var(--font-weight-bold);

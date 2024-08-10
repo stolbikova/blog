@@ -8,16 +8,20 @@
             </div>
         {% endif %}
         {% if user.is_authenticated %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <a class="btn btn-danger delete-btn" href="{% url 'post_delete' pk=post.pk %}">
-            <span class="glyphicon glyphicon-trash"></span>
-        </a>
+        <div class="d-flex align-items-center">
+            <a class="btn btn-secondary me-3" href="{% url 'post_edit' pk=post.pk %}"><span class="bi bi-pencil"></span></a>
+            <a class="btn btn-danger" href="{% url 'post_delete' pk=post.pk %}">
+                <span class="bi bi-trash"></span>
+            </a>
+        </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|safe|linebreaks }}</p>
     </div>
     <hr>
-    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+
+    <a class="btn btn-secondary" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
         <div class="comment">
@@ -38,7 +42,5 @@
             <p>{{ comment.text|safe|linebreaks }}</p>
         </div>
         {% endif %}
-    {% empty %}
-        <p>No comments here yet :(</p>
     {% endfor %}
 {% endblock %}
