@@ -1,11 +1,23 @@
 @import 'variables.css';
 
+:root {
+    --bs-link-color-rgb: var(--header-text-color);
+}
+
 body {
     font-family: var(--font-family);
     line-height: var(--line-height);
     color: var(--primary-color);
 
     font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(var(--header-text-color), 0.8);
 }
 
 @media (min-width: 481px) {
@@ -15,10 +27,8 @@ body {
 }
 
 .page-header {
-    display: block;
     height: var(--header-height);
     background-color: var(--header-bg-color);
-    margin-top: 0;
     padding: var(--space-s);
 }
 
