@@ -5,9 +5,12 @@ body {
     line-height: var(--line-height);
     color: var(--primary-color);
 
-    font-size: 14px;
-    @media (max-width: 480px) {
-        font-size: 16px;
+    font-size: 20px;
+}
+
+@media (min-width: 481px) {
+    body {
+        font-size: 14px;
     }
 }
 
@@ -16,7 +19,13 @@ body {
     height: var(--header-height);
     background-color: var(--header-bg-color);
     margin-top: 0;
-    padding: var(--space-m) var(--space-m) var(--space-m) var(--space-left);
+    padding: var(--space-s);
+}
+
+@media (min-width: 481px) {
+    .page-header {
+        padding: var(--space-m) var(--space-m) var(--space-m) var(--space-left);
+    }
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -27,20 +36,26 @@ body {
 
 .content {
     background-color: var(--content-bg-color);
-    margin: var(--space-left);
-
-    @media (max-width: 480px) {
-        .content {
-            width: 100%;
-            margin-left: 0;
-        }
-    }
+    margin: var(--space-s);
 }
 
+@media (min-width: 481px) {
+    .content {
+        margin: var(--space-left);
+        padding: var(--space-m);
+    }
+}
 
 h1, h2, h3, h4 {
     font-weight: var(--font-weight-bold);
     color: var(--header-text-color);
+    margin-top: var(--space-s); /* Add margin for spacing on mobile */
+}
+
+@media (min-width: 481px) {
+    h1, h2, h3, h4 {
+        margin-top: 0;
+    }
 }
 
 .date {
@@ -59,9 +74,18 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #fff;
     float: right;
-    font-size: 20pt;
+    font-size: 22pt;
     margin-right: 20px;
 }
+
+@media (min-width: 481px) {
+    .top-menu, .top-menu:hover, .top-menu:visited {
+        font-size: 20pt;
+        margin-right: 20px;
+        float: right;
+    }
+}
+
 
 .post {
     margin-bottom: 50px;
