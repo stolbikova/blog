@@ -16,7 +16,9 @@ a:hover {
     color: rgba(var(--header-text-color), 0.8);
 }
 
-@media (min-width: 481px) {
+
+
+@media (min-width: 575px) {
     body {
         font-size: 14px;
     }
@@ -28,7 +30,7 @@ a:hover {
     padding: var(--space-s);
 }
 
-@media (min-width: 481px) {
+@media (min-width: 575px) {
     .page-header {
         padding: var(--space-m) var(--space-m) var(--space-m) var(--space-left);
     }
@@ -45,7 +47,7 @@ a:hover {
     margin: var(--space-s);
 }
 
-@media (min-width: 481px) {
+@media (min-width: 575px) {
     .content {
         margin: var(--space-left);
         padding: var(--space-m);
@@ -58,7 +60,7 @@ h1, h2, h3, h4 {
     margin-top: var(--space-s); /* Add margin for spacing on mobile */
 }
 
-@media (min-width: 481px) {
+@media (min-width: 575px) {
     h1, h2, h3, h4 {
         margin-top: 0;
     }
@@ -84,7 +86,7 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 575px) {
     .top-menu, .top-menu:hover, .top-menu:visited {
         font-size: 20pt;
         margin-right: 20px;

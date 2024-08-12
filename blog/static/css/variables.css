@@ -35,5 +35,6 @@
     --secondary-color: #828282;
     --primary-color: #3f352F;
 
-    --bs-link-color-rgb: var(--header-text-color);
+    /* Breakpoints */
+    --phone-breakpoint: 575px;
 }
