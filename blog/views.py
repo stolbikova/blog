@@ -43,7 +43,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     def form_valid(self, form):
         post = form.save(commit=False)
         post.author = self.request.user
-        post.published_date = timezone.now()
+        # post.published_date = timezone.now()
         post.save()
         return redirect('post_detail', pk=post.pk)
 
