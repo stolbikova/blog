@@ -9,7 +9,7 @@ environ.Env.read_env(BASE_DIR / '.env')
 
 SECRET_KEY = env('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com',
-                 'localhost', '54.229.17.27']
+                 'localhost', '176.34.225.1']
 DEBUG = True
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
