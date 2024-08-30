@@ -9,13 +9,17 @@ environ.Env.read_env(BASE_DIR / '.env')
 
 SECRET_KEY = env('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com',
+<< << << < HEAD
                  'localhost', '176.34.225.1', 'stolbikova.com']
-DEBUG = True
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
-CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_CONFIGS = {
+== == == =
+                 'localhost', '54.229.17.27', 'stolbikova.com']
+>> >>>> > ca0a2e8(added domain name.)
+DEBUG= True
+LOGIN_URL= '/accounts/login/'
+LOGIN_REDIRECT_URL= '/'
+LOGOUT_REDIRECT_URL= '/'
+CKEDITOR_UPLOAD_PATH= "uploads/"
+CKEDITOR_CONFIGS= {
     'default': {
         'toolbar': 'full',
         'height': 300,
@@ -118,7 +122,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "blog/static",
 ]
 
 # Media files
